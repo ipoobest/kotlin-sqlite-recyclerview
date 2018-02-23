@@ -15,7 +15,7 @@ class Chore {
 
     constructor(choreName: String, assignedBy: String,
                 assignedTo: String, timeAssigned: Long,
-                id: Int)  {
+                id: Int) : this() {
 
         this.choreName = choreName
         this.assignedBy = assignedBy
@@ -24,6 +24,8 @@ class Chore {
         this.id = id
 
     }
+
+    constructor()
 
 
     fun showHumanDate(timeAssigned: Long): String {
